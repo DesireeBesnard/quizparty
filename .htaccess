@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+ErrorDocument 404 https://desireeb.promo-vesoul33.codeur.online/quizparty/404.php

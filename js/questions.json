@@ -1,0 +1,68 @@
+[
+    {
+      "question": "Qui a fondé avec Bob Marley le groupe vocal jamaïcain The Wailers ?",
+      "proposal1": "Peter Tosh",
+      "proposal2": "Clinton Fearon",
+      "proposal3": "Freddie McGregor",
+      "proposal4": "Bim Sherman",
+      "answer": 1
+    },
+    {
+      "question":
+        "Quelle actrice britannique Jean Michel Jarre a-t-il épousé en 1978 ?",
+        "proposal1": "Julie Cox",
+        "proposal2": "Jane Birkin",
+        "proposal3": "Charlotte Rampling",
+        "proposal4": "Kate Beckinsale",
+      "answer": 3
+    },
+    {
+      "question": "Combien de cordes au minimum compte-t-on sur une guitare basse, avec un diapason de 34 pouces ?",
+      "proposal1": "Trois",
+      "proposal2": "Quatre",
+      "proposal3": "Cinq",
+      "proposal4": "Six",
+      "answer": 2
+    },
+    {
+      "question": "De quel célèbre DJ Adam Richard Wiles est le nom?",
+      "proposal1": "Calvin Harris",
+      "proposal2": "R3hab",
+      "proposal3": "Fatboy Slim",
+      "proposal4": "Skrillex",
+      "answer": 1
+    },
+    {
+      "question": "Quel auteur-compositeur a écrit la chanson 'I Don't Want to Miss a Thing' pour Aerosmith?",
+      "proposal1": "Bruce Johnston",
+      "proposal2": "Linda Perry",
+      "proposal3": "Diane Warren",
+      "proposal4": "Walter Afanasieff",
+      "answer": 3
+    },
+    {
+      "question": "Complèter le titre de Mark Ronson: Uptown...",
+      "proposal1": "Beat",
+      "proposal2": "Girl",
+      "proposal3": "Funk",
+      "proposal4": "Tunes",
+      "answer": 3
+    },
+    {
+      "question": "Sur quel album de Taylor Swift est Shake it Off?",
+      "proposal1": "Speak now",
+      "proposal2": "Taylor Swift",
+      "proposal3": "Red",
+      "proposal4": "1989",
+      "answer": 4
+    }
+    ,
+    {
+      "question": "Lequel des Beatle a interprété une chanson thème de James Bond?",
+      "proposal1": "Speak now",
+      "proposal2": "Taylor Swift",
+      "proposal3": "Red",
+      "proposal4": "1989",
+      "answer": 4
+    }
+  ]
