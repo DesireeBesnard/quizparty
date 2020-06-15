@@ -20,7 +20,7 @@
 
     <div class="container-fluid h-100 d-flex align-items-center">
     <div class="logo position-absolute">
-        <a href="https://desireeb.promo-vesoul33.codeur.online/quizparty"><img class="img-fluid" src="img/logo-quizparty.png" alt="logo du site QuizParty"></a>
+        <a href="https://desireeb.promo-vesoul33.codeur.online/quizparty"><img class="img-fluid logo-quizparty" src="img/logo-quizparty.png" alt="logo du site QuizParty"></a>
     </div>
         <div class="overlay-navigation">
             <nav role="navigation" class="marker">
