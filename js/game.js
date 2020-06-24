@@ -9,8 +9,9 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
 let questions = [];
+
+
 fetch("js/questions.json")
   .then ( response => {
     return response.json();
@@ -21,11 +22,9 @@ fetch("js/questions.json")
     console.error(err);
   });
 
-  
-//CONSTANTS
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 20;
+const MAX_QUESTIONS = 8;
 
 startGame = () => {
     questionCounter = 0;
@@ -37,7 +36,7 @@ startGame = () => {
 getNewQuestion = () =>{
     if(availableQuestions.length === 0  || questionCounter >= MAX_QUESTIONS){
       localStorage.setItem('mostRecentScore', score);
-      return window.location.assign('end.html');
+      return window.location.assign('end.php');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
@@ -76,9 +75,11 @@ proposals.forEach(proposal => {
         incrementScore(CORRECT_BONUS);
       }
 
+      selectedProposal.parentElement.classList.remove('game-choice');
       selectedProposal.parentElement.classList.add(classToApply);
       setTimeout( () => {
         selectedProposal.parentElement.classList.remove(classToApply);
+        selectedProposal.parentElement.classList.add('game-choice');
         getNewQuestion();
       }, 1000);
       

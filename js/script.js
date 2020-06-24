@@ -1,4 +1,6 @@
 // debut navbar
+const burgerBackground = document.querySelector('.rounded-circle');
+
 $('.open-overlay').click(function () {
     $('.open-overlay').css('pointer-events', 'none');
     var overlay_navigation = $('.overlay-navigation'),
@@ -7,6 +9,7 @@ $('.open-overlay').click(function () {
         bottom_bar = $('.bar-bottom');
 
     overlay_navigation.toggleClass('overlay-active');
+
     if (overlay_navigation.hasClass('overlay-active')) {
 
         top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
@@ -32,6 +35,7 @@ $('.open-overlay').click(function () {
                 })
             }
         })
+        burgerBackground.classList.toggle('default-color');
 
     } else {
         $('.open-overlay').css('pointer-events', 'none');
@@ -58,7 +62,10 @@ $('.open-overlay').click(function () {
                 });
             }
         })
+        burgerBackground.classList.toggle('default-color');
     }
+    
+
 })
 // fin navbar
 

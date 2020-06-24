@@ -1,7 +1,6 @@
-<?php 
-    require 'handler-login.php';
+<?php
+include 'handler-login.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Quizz App</title>
+    <!-- meta generales -->
+  <meta name="author" content="Désirée Besnard">
+    <meta name="category" content="Web application de quiz, QuizParty">
+    <meta name="Keywords" content="Web, application, développement, jeu, quiz, questions, réponses">
+    <meta name="description" content="QuizParty est un jeu trivia de divertissement. Iil s'agit d'un quiz avec des questions portant sur des questions de culture générale. Le but est d'avoir le meilleur score possible">
+  <!-- index -->
+    <meta property="og:title" content="QuizParty - Le jeu qui vous suit partout">
+    <meta property="og:description" content="QuizParty est un jeu trivia de divertissement. Iil s'agit d'un quiz avec des questions portant sur des questions de culture générale. Le but est d'avoir le meilleur score possible">
+    <meta property="og:image" content="images/metafacebookquizparty.jpg">
+    <meta property="og:url" content="#">
+    <meta name="twitter:title" content="QuizParty - Le jeu qui vous suit partout">
+    <meta name="twitter:description" content="QuizParty est un jeu trivia de divertissement. Iil s'agit d'un quiz avec des questions portant sur des questions de culture générale. Le but est d'avoir le meilleur score possible">
+    <meta name="twitter:image" content="images/metatwitter.jpg">
+    <meta name="twitter:card" content="images/metatwitterquizparty.jpg">
+    <meta name="twitter:site" content="#">
+    <title>QuizParty - Login</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -26,26 +40,10 @@
         <div class="logo position-absolute">
             <a href="https://desireeb.promo-vesoul33.codeur.online/quizparty"><img class="img-fluid logo-quizparty" src="img/logo-quizparty.png" alt="logo du site QuizParty"></a>
         </div>
-        <div class="overlay-navigation">
-            <nav role="navigation" class="marker">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="game.html">QuizParty</a></li>
-                    <li><a href="scores.html">Scores</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="login.php">Login</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php include 'nav.php' ?>
     </div>
 
-    <div class="open-overlay">
-        <div class="p-2 default-color rounded-circle">
-            <span class="bar-top"></span>
-            <span class="bar-middle"></span>
-            <span class="bar-bottom"></span>
-        </div>
-    </div>
+
 
     <div class="container-fluid h-100 d-flex align-items-center">
         <div class="container">
@@ -73,7 +71,7 @@
                             <!-- Sign in button -->
                             <button class="btn btn-default btn-lg waves-effect play-hover marker my-4" type="submit" name="submitlogin">Connexion</button>
                             <div>
-                            <?php
+                                <?php
                                 if (isset($usernameErr)) {
                                     echo $usernameErr;
                                 } else if (isset($passwordErr)) {
@@ -84,7 +82,7 @@
                                 } else if (isset($incorrectPass)) {
                                     echo $incorrectPass;
                                 }
-                            ?>
+                                ?>
                             </div>
                         </form>
                         <!-- Default form login -->
@@ -101,18 +99,10 @@
 
 
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Velocity js -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
-    <!-- Your custom scripts (optional) -->
+    <?php
+    include 'mdb-js.php';
+    ?>
+    <!-- custom scripts -->
     <script src="js/script.js"></script>
 </body>
 

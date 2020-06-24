@@ -50,9 +50,12 @@ if (isset($_POST['submitlogin'])) {
                 // Authentification réussie, l'utilisateur est connecté
                 // On crée ensuite une session pour notifier quee l'utilisateur est connecté, le fonctionnement ressemble à celui des cookies mais avec les données sur serveur.
                 session_regenerate_id();
+
                 $_SESSION["loggedin"] = TRUE;
                 $_SESSION["name"] = $_POST['username'];
+
                 header('location: admin.php');
+
             } else {
                 $incorrectPass = "<p class='font-weight-bold text-danger'>Mot de passe incorrect</p>";
             }
@@ -62,7 +65,10 @@ if (isset($_POST['submitlogin'])) {
         $stmt->close();
     }
 }
-
 ?>
+
+
+
+
 
 
